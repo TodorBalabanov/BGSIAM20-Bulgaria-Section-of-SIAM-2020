@@ -18,22 +18,33 @@
 % http://www.iict.bas.bg/
 % iict@bas.bg
 
-\vspace*{3mm}
 \underline{Introduction} 
-%
+
+\vspace*{2mm}
+Differential Evolution is one of the most effective meta-heuristics for global optimization in continuous multidimensional spaces. It is in the class of the Genetic Algorithms and organizes the search for sub-optimal solutions in a population. Inspired by the ideas in natural evolution, it has three common operators - selection, crossover, and mutation. During selection, better-fitted individuals from the population are selected to reproduce hoping that the offspring will be even better. The crossover is applied to achieve an exploration of the multidimensional space of the solutions. On the other side of recombination is the mutation which is used for exploitation of the multidimensional solutions space. This researcher proposes a partial curve fitting for mutation improvement. 
 
 \vspace*{3mm}
 \underline{Partial Curve Fitting in Multidimensional Space} 
-%
+
+\vspace*{2mm}
+Curve fitting is a well-known approach in the fields of interpolation, approximation, and forecasting. The most popular form of curve fitting is linear regression where a single line is drawn at a minimum distance from a set of points. Generalized linear regression is an approach to map nonlinear curves in the calculations done for linear regression. With modern computers generalized linear regression is successfully replaced with nonlinear regression models. The most popular nonlinear models are logarithmic, exponential, and polynomial. 
+
+\vspace*{2mm}
+In a multidimensional space, where $y=f(\vec{x})$ and $\vec{x}$ is a vector, set of function $y=f_i(x_i)$ can be defined. Functions $f_i$ are not interesting by themselves. The way in which curve fitting can be applied over these functions is the interesting part. By applying nonlinear regression best fitting curve from the set of logarithmic, exponential, and polynomial is selected to approximate each function $f_i$.
 
 \vspace*{3mm}
 \underline{Proposition for Differential Evolution Mutation} 
-%
+
+\vspace*{2mm}
+The classic form of mutation uses a difference vector calculated from randomly selected individuals. In the proposed modification an approximate function (obtained by nonlinear regression) is used for each $f_i$. The difference vector is checked element by element and each value that not corresponds with the gradient of the approximating function is inverted. By such an extension of the mutation partial derivative helps for the better approaching the global optimum(s). 
 
 \vspace*{3mm}
 \underline{Conclusions} 
-%
+
+\vspace*{2mm}
+This research proposes curve fitting motivated modification of the mutation operator in Differential Evolution. The proposed mutation shows promising improvements in the optimization convergence compared with the classical way of mutation. 
 
 \vspace*{5mm}
-\underline{Acknowledgments} This work was inspired and supported by private funding of Velbazhd Software LLC.
+\underline{Acknowledgments}
+This work was inspired and supported by private funding of Velbazhd Software LLC.
 \end{document}
